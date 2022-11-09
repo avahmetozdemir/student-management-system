@@ -15,6 +15,7 @@ public class StudentManagementApp {
 
         for (int n = 0; n < numberOfStudents; n++){
             students[n] = new Student();
+            students[n].enroll();
 
         }
         for (int n = 0; n < numberOfStudents; n++){
