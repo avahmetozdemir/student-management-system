@@ -24,10 +24,18 @@ public class Student {
 
         System.out.println("1 - Freshman\n2 - Sophmore\n3 - Junior\n4 - Senior\nEnter student class level: ");
         this.gradeYear = in.nextInt();
+        setStudentID();
+
     }
 
     // Generate an ID
 
+    private void setStudentID(){
+        id++;
+        //Grade level + ID
+        this.studentID =  gradeYear + "" + id;
+
+    }
 
     //Enroll in courses
 
